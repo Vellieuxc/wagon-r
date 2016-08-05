@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Product.destroy_all
+Product.create!(name: "zouzou", url: "les.zou", tagline: "zo")
+Product.create!(name: "zizi", url: "to.cd", tagline: "zo")
+Product.create!(name: "zaza", url: "capo", tagline: "bt")
