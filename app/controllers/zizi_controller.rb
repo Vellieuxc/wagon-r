@@ -1,0 +1,2 @@
+class ZiziController < ApplicationController
+end
