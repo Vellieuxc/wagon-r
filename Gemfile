@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
+gem "font-awesome-rails"
 gem 'autoprefixer-rails'
 gem 'figaro'
 gem 'redis'
