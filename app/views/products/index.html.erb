@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      </div>
         <h1 class="text-center">all products</h1>
-        <ul>
-          <%= @products.each do |product| %>
+
+        <% @products.each do |product| %>
+
             <div class="product">
                <div class='product-upvote'>
                 <div class="product-arrow"></div>
@@ -18,23 +18,23 @@
               <ul class="list-inline product-controls hidden-sm hidden-xs">
                 <li>
                   <%= link_to product_path(product) do %>
-                    <i class="fa fa-eye">
+                    <i class="fa fa-eye"></i>
                   <%end%>
                 </li>
                 <li>
                   <%= link_to edit_product_path(product) do %>
-                    <i class="fa fa-pencil">
+                    <i class="fa fa-pencil"></i>
                   <%end%>
                 </li>
                 <li>
                   <%= link_to product_path(product), method: :delete do %>
-                    <i class="fa fa-trash">
+                    <i class="fa fa-trash"></i>
                   <%end%>
                 </li>
               </ul>
             </div>
 
-          <% end %>
-        </ul>
+        <% end %>
+        </div>
     </div>
   </div>
